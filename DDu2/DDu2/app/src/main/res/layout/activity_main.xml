@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/White"
+    tools:context="com.example.administrator.ddu2.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/basicColor"
+        android:id="@+id/textView"
+        android:textSize="40sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camera"
+        android:drawableTop="@drawable/camera_icon"
+        android:id="@+id/camera_btn"
+        android:background="@drawable/button_shape"
+        android:layout_alignTop="@+id/gallery_btn"
+        android:layout_alignLeft="@+id/album_btn"
+        android:layout_alignStart="@+id/album_btn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gallery"
+        android:drawableTop="@drawable/gallery_icon"
+        android:id="@+id/gallery_btn"
+        android:background="@drawable/button_shape"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/album_btn"
+        android:layout_alignEnd="@+id/album_btn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make Album"
+        android:drawableTop="@drawable/editalbum_icon"
+        android:id="@+id/album_btn"
+        android:background="@drawable/button_shape"
+        android:paddingLeft="52dp"
+        android:paddingRight="52dp"
+        android:layout_below="@+id/camera_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+</RelativeLayout>
